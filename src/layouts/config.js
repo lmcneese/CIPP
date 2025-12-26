@@ -173,6 +173,11 @@ export const nativeMenuItems = [
             path: "/tenant/administration/partner-relationships",
             permissions: ["Tenant.Relationship.*"],
           },
+          {
+            title: "Domains",
+            path: "/tenant/administration/domains",
+            permissions: ["Tenant.Administration.*"],
+          },
         ],
       },
       {
@@ -190,7 +195,7 @@ export const nativeMenuItems = [
         items: [
           {
             title: "Standards Management",
-            path: "/tenant/standards/list-standards",
+            path: "/tenant/standards/alignment",
             permissions: ["Tenant.Standards.*"],
           },
           {
@@ -910,6 +915,12 @@ export const nativeMenuItems = [
           {
             title: "Table Maintenance",
             path: "/cipp/advanced/table-maintenance",
+            roles: ["superadmin"],
+            permissions: ["CIPP.SuperAdmin.*"],
+          },
+          {
+            title: "Diagnostics",
+            path: "/cipp/advanced/diagnostics",
             roles: ["superadmin"],
             permissions: ["CIPP.SuperAdmin.*"],
           },
